@@ -8,7 +8,8 @@ class Bullet(Sprite):
         self.screen = screen
 
         #create bullet in position (0,0) and setup right position
-        self.rect = pygame.Rect(0, 0, ai_settings.bullet_width, ai_settings.bullet_height)
+        self.image = pygame.image.load('images/bullet.bmp')
+        self.rect = self.image.get_rect()
         self.rect.centerx = ship.rect.centerx
         self.rect.top = ship.rect.top
 
@@ -23,4 +24,4 @@ class Bullet(Sprite):
         self.rect.y = self.y
     def draw_bullet(self):
         """print bullet on screen"""
-        pygame.draw.rect(self.screen, self.color, self.rect)
+        self.screen.blit(self.image, self.rect)
