@@ -1,7 +1,7 @@
 import sys
 
 def main():
-	maxwidth = 100
+	maxwidth, strFormat = process_options()
 	print_start()
 	count = 0
 	while True:
@@ -13,7 +13,7 @@ def main():
 				color = "white"
 			else:
 				color = "lightyellow"
-			print_line(line, color, maxwidth)
+			print_line(line, color, maxwidth, strFormat)
 			count += 1
 		except EOFError:
 			break
@@ -25,7 +25,7 @@ def print_start():
 def print_end():
 	print("</table>")
 
-def print_line(line, color, maxwidth):
+def print_line(line, color, maxwidth, strFormat):
 	print("<tr bgcolor='{0}'>".format(color))
 	fields = extract_fields(line)	
 	for field in fields:
@@ -35,7 +35,7 @@ def print_line(line, color, maxwidth):
 			number = field.replace(",", "")
 			try:
 				x = float(number)
-				print("<td allign='right'>{0:d}</td>".format(round(x)))
+				print("<td allign='right'>{0:{1}}</td>".format(round(x), strFormat))
 			except ValueError:
 				field = field.title()
 				field = field.replace(" And ", " and ")
@@ -75,4 +75,23 @@ def escape_html(text):
 	text = text.replace(">", "&gt;")
 	return text
 
+def process_options():
+	if len(sys.argv) == 1:
+		return (100, '.0f')
+	if len(sys.argv) == 2:
+		if(sys.argv[1] in ['-h', '--help']):
+			print('usage: {0} [maxwidth] [format]'.format(sys.argv[0]))
+			return
+		else:
+			try:
+				return (int(sys.argv[1]), '.0f')
+			except FormatError:
+				print('Failure input')
+				return (100, '.0f')
+	try:
+		return (int(sys.argv[1]), sys.argv[2])
+	except FormatError:
+		print('Failure input')
+		return (100, sys.argv[2])
+			
 main()
