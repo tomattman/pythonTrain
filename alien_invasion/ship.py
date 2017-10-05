@@ -15,11 +15,14 @@ class Ship():
         self.rect.centerx = self.screen_rect.centerx
         self.rect.bottom = self.screen_rect.bottom
 
-        self.center = float(self.rect.centerx)
+        self.center_x = float(self.rect.centerx)
+        self.center_y = float(self.rect.centery)
 
         #флаг перемещения вправо
         self.moving_right = False
         self.moving_left = False
+        self.moving_up = False
+        self.moving_down = False
 
     def blitme(self):
         """Draw ship in current position"""
@@ -30,6 +33,10 @@ class Ship():
             self.move_right()
         elif self.moving_left:
             self.move_left()
+        if self.moving_up:
+            self.move_up()
+        elif self.moving_down:
+            self.move_down()
 
     def move_right(self):
         self.change_position_x(self.ai_settings.ship_speed_factor)
@@ -37,5 +44,14 @@ class Ship():
         self.change_position_x(-self.ai_settings.ship_speed_factor)
     def change_position_x(self, x):
         if 0 < self.rect.left + x and self.rect.right + x < self.ai_settings.screen_width:
-             self.center += x
-        self.rect.centerx = self.center
+             self.center_x += x
+        self.rect.centerx = self.center_x
+
+    def move_up(self):
+        self.change_position_y(-self.ai_settings.ship_speed_factor)
+    def move_down(self):
+        self.change_position_y(self.ai_settings.ship_speed_factor)
+    def change_position_y(self, y):
+        if 0 < self.rect.top + y and self.rect.bottom + y < self.ai_settings.screen_height:
+             self.center_y += y
+        self.rect.centery = self.center_y
