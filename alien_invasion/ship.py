@@ -11,18 +11,21 @@ class Ship():
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 
-        #new ships star in the bottom
-        self.rect.centerx = self.screen_rect.centerx
-        self.rect.bottom = self.screen_rect.bottom
-
-        self.center_x = float(self.rect.centerx)
-        self.center_y = float(self.rect.centery)
+        self.center_ship();
 
         #флаг перемещения вправо
         self.moving_right = False
         self.moving_left = False
         self.moving_up = False
         self.moving_down = False
+
+    def center_ship(self):
+        #new ships star in the bottom
+        self.rect.centerx = self.screen_rect.centerx
+        self.rect.bottom = self.screen_rect.bottom
+
+        self.center_x = float(self.rect.centerx)
+        self.center_y = float(self.rect.centery)
 
     def blitme(self):
         """Draw ship in current position"""
