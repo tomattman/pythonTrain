@@ -1,4 +1,5 @@
 import pygame
+import sys
 
 from time import sleep
 from game_stats import GameStats
@@ -82,6 +83,8 @@ def check_bullet_alien_collisions(ai_settings, screen, stats, sb, ship, aliens, 
         sb.prep_score()
         check_high_score(stats, sb)
     if len(aliens) == 0:
+        stats.is_mouse_control = False
+        pygame.mouse.set_visible(True)
         stats.level += 1
         sb.prep_level()
         ship.center_ship()
@@ -93,6 +96,8 @@ def ship_hit(ai_settings, stats, sb, screen, ship, aliens, bullets):
     if stats.ship_left > 0:
         stats.ship_left -= 1
 
+        stats.is_mouse_control = False
+        pygame.mouse.set_visible(True)
         sb.prep_ships()
 
         aliens.empty()
@@ -126,3 +131,7 @@ def update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_bu
     sb.show_score()
     #Отслеживание последнего прорисованного экрана
     pygame.display.flip()
+
+def save_and_exit(stats):
+    stats.save_scrore();
+    sys.exit()
