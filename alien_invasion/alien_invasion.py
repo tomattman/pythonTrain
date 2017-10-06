@@ -1,12 +1,14 @@
 import pygame
 
 from settings import Settings
-from ship import Ship
+import events_handlers as eh
 import game_functions as gf
 from pygame.sprite import Group
 from game_stats import GameStats
-from button import Button
-from scoreboard import Scoreboard
+
+from Models.button import Button
+from Models.scoreboard import Scoreboard
+from Models.ship import Ship
 
 def run_game():
     """init game, create screen object"""
@@ -34,7 +36,7 @@ def run_game():
     gf.create_fleet(ai_settings, screen, ship, aliens)
 
     while True:
-        gf.check_events(ai_settings, stats, sb, screen, ship, bullets, play_bytton)
+        eh.check_events(ai_settings, stats, sb, screen, ship, bullets, play_bytton)
         if stats.game_active:
             ship.update()
             gf.update_bullets(ai_settings, screen, stats, sb, ship, aliens, bullets)
