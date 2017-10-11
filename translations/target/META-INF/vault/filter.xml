@@ -1,0 +1,52 @@
+<workspaceFilter version="1.0">
+  <filter root="apps/sapdx/i18n/forms/cs-cz/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/da-dk/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/de-at/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/de-ch/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/el-gr/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/en-ae/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/en-au/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/en-ca/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/en-gb/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/en-hk/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/en-in/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/en-sg/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/en-us/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/en-za/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/es-co/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/es/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/et-ee/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/fi/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/fr-be/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/fr-ca/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/fr-ch/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/he-il/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/hr/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/hu/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/ja-jp/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/ko-kr/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/lt/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/lv/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/nl-be/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/no/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/pl/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/pt-br/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/sl-si/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/sr-rs/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/sv-se/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/ar-ae/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/bg/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/pt/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/ro/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/tr/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/de/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/ru/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/fr/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/nl/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/it/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/iw-il/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/sk/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/zh-cn/lol" mode="update"/>
+<filter root="apps/sapdx/i18n/forms/zh-tw/lol" mode="update"/>
+  
+</workspaceFilter>

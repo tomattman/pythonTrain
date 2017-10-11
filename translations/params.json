@@ -1,0 +1,9 @@
+{
+  "package_name": "Name",
+  "package_group": "apps.sapdx.i18n.forms",
+  "fd_hoi": {
+    "key": "form.registration.pwdValidation.lowerCaseChar.message",
+    "name": "lol",
+    "message": "lowerCaseChar"
+  }
+}

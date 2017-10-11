@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <comment>FileVault Package Properties</comment>
+  <entry key="name">{package_name}</entry>
+  <entry key="group">{package_group}</entry>
+</properties>
