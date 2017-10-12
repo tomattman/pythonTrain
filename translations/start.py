@@ -53,7 +53,7 @@ def generate_filters(translations, languages, template = "templates\\filter_temp
     filters_body = ""
     for lang in languages:
         for translate in translations.translations:
-            filters_body += '<filter root="{0}/{1}/{2}" mode="update"/>\n'.format(
+            filters_body += '<filter root="/{0}/{1}/{2}" mode="update"/>\n'.format(
                 translations.package_group.replace(".", "/"), lang, translate.get("name", translate.get("key")))
     with open("target\\META-INF\\vault\\filter.xml", "w") as file:
         file.write(template_str.format(filters = filters_body))

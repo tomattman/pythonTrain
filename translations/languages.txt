@@ -47,3 +47,4 @@ iw-il
 sk
 zh-cn
 zh-tw
+uk-ua

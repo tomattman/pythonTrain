@@ -1,9 +1,0 @@
-dictionary_path=\apps\sapdx\i18n\forms
-
-key=superKey
-name=superName
-message=superMessage
-
-key=superKey2
-name=superName2
-message=superMessage2
